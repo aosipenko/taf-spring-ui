@@ -1,10 +1,10 @@
 package se.telenor.taf.config;
 
+import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.jdbc.datasource.embedded.ConnectionProperties;
 import se.telenor.taf.beans.WebDriverFacade;
 
 import java.util.Properties;
@@ -29,10 +29,14 @@ public class BeanConfig {
         return new WebDriverFacade(Long.parseLong(timeoutValue));
     }
 
+    @SneakyThrows
     @Bean(name = "dataSource")
     public DriverManagerDataSource dataSource() {
+        Properties properties = new Properties();
+        properties.setProperty("driverClassName", "org.postgresql.Driver");
         DriverManagerDataSource dmds = new DriverManagerDataSource(host, userName, password);
         dmds.setDriverClassName(driver);
+        dmds.setConnectionProperties(properties);
         return dmds;
     }
 }
