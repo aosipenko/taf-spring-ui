@@ -1,0 +1,13 @@
+{
+  "se.telenor.taf.web.SearchPage": {
+    "se.telenor.taf.web.SubPageOne": {
+      "se.telenor.taf.web.SubSubPageFive": {},
+      "se.telenor.taf.web.SubSubPageOne": {}
+    },
+    "se.telenor.taf.web.SubPageTwo": {
+      "se.telenor.taf.web.SubSubPageFour": {},
+      "se.telenor.taf.web.SubSubPageTwo": {}
+    },
+    "se.telenor.taf.web.SubPageThree": {}
+  }
+}

@@ -1,6 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Selenium" verbose="1">
+    <test name="framework-integrity">
+        <classes>
+            <class name="se.telenor.test.TracingutilTest"></class>
+        </classes>
+    </test>
     <test name="Google Regression">
         <classes>
             <class name="se.telenor.cucumber.CucumberTestRunner"/>

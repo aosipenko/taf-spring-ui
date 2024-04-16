@@ -1,8 +1,8 @@
 package se.telenor.taf.web;
 
-import se.telenor.taf.trace.BusinesNode;
+import se.telenor.taf.trace.BusinessNode;
 
-@BusinesNode
+@BusinessNode
 public class SubSubPageFive {
 
 }

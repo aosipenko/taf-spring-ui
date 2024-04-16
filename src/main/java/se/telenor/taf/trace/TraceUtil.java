@@ -20,7 +20,7 @@ public class TraceUtil {
     private static List<Field> getBusinesNodes(Field[] fields) {
         return Arrays.stream(fields).filter(
                         f -> Arrays.stream(f.getType().getAnnotations()).anyMatch(
-                                a -> a.annotationType().equals(BusinesNode.class)))
+                                a -> a.annotationType().equals(BusinessNode.class)))
                 .collect(Collectors.toList());
     }
 }
