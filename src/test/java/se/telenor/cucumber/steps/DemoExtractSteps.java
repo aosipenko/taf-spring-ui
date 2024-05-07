@@ -8,6 +8,9 @@ import se.telenor.taf.util.DataHolder;
 public class DemoExtractSteps {
 
     @Autowired
+    private SomeClassName someClassName;
+
+    @Autowired
     private DataHolder dataHolder;
 
     @Given("I extract object {string} as SomeObject")

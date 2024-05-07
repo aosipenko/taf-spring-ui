@@ -8,6 +8,9 @@ import se.telenor.taf.util.DataHolder;
 public class DemoStoreSteps {
 
     @Autowired
+    private SomeClassName someClassName;
+
+    @Autowired
     private DataHolder dataHolder;
 
     @Given("I store SomeObject as {string}")

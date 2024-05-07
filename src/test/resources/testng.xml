@@ -6,9 +6,29 @@
             <class name="se.telenor.test.TracingutilTest"></class>
         </classes>
     </test>
-    <test name="Google Regression">
+    <test name="Other Regression">
         <classes>
-            <class name="se.telenor.cucumber.CucumberTestRunner"/>
+            <class name="se.telenor.cucumber.CucumberOtherTestRunner"/>
+        </classes>
+    </test>
+    <test name="Broadband Update Regression">
+        <classes>
+            <class name="se.telenor.cucumber.CucumberBroadbandUpdateTestRunner"/>
+        </classes>
+    </test>
+    <test name="Mobile Update Regression">
+        <classes>
+            <class name="se.telenor.cucumber.CucumberMobileUpdateTestRunner"/>
+        </classes>
+    </test>
+    <test name="Broadband Cancel Regression">
+        <classes>
+            <class name="se.telenor.cucumber.CucumberBroadbandCancelTestRunner"/>
+        </classes>
+    </test>
+    <test name="Mobile Cancel Regression">
+        <classes>
+            <class name="se.telenor.cucumber.CucumberMobileCancelTestRunner"/>
         </classes>
     </test>
 </suite>

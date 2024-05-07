@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import se.telenor.taf.beans.SomeClassName;
 import se.telenor.taf.beans.WebDriverFacade;
 
 import java.util.Properties;
@@ -27,6 +28,11 @@ public class BeanConfig {
     @Bean
     public WebDriverFacade webDriverFacade() {
         return new WebDriverFacade(Long.parseLong(timeoutValue));
+    }
+
+    @Bean
+    public SomeClassName someClassName(){
+        return new SomeClassName();
     }
 
     @SneakyThrows

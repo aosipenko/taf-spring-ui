@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.springframework.beans.factory.annotation.Autowired;
 import se.telenor.taf.util.WebDriverFactory;
 
 import javax.annotation.PreDestroy;
@@ -13,6 +14,9 @@ import java.time.Duration;
 import java.util.List;
 
 public class WebDriverFacade {
+
+    @Autowired
+    private SomeClassName someClassName;
 
     private final WebDriver driver;
     private final long timeout;
