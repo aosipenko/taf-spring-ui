@@ -8,9 +8,6 @@ import se.telenor.taf.util.DataHolder;
 public class DemoExtractSteps {
 
     @Autowired
-    private SomeClassName someClassName;
-
-    @Autowired
     private DataHolder dataHolder;
 
     @Given("I extract object {string} as SomeObject")
@@ -23,5 +20,10 @@ public class DemoExtractSteps {
     public void storeString(String alias) {
         String s = dataHolder.get(alias, String.class);
         System.out.println(s);
+    }
+
+    @Given("some step")
+    public void someStep() {
+        System.out.println("step!");
     }
 }

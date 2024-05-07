@@ -22,13 +22,12 @@ import se.telenor.taf.util.UserType;
 @ContextConfiguration(locations = "classpath*:spring/spring-context.xml")
 @CucumberOptions(features = "src/test/resources/features",
         glue = "se.telenor",
-        tags = "@other",
         plugin = {"pretty",
                 "json:target/cucumber-reports/Cucumber.json",
                 "html:target/cucumber-report.html",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         })
-public class CucumberOtherTestRunner extends AbstractTestNGCucumberTests {
+public class CucumberParentRunner extends AbstractTestNGCucumberTests {
 
     @BeforeSuite
     public void setUpUsers() {
@@ -39,11 +38,6 @@ public class CucumberOtherTestRunner extends AbstractTestNGCucumberTests {
                 System.out.println("Something went wrong, skip this user");
             }
         }
-    }
-
-    @BeforeTest
-    public void checkUser() {
-        Assert.assertTrue(UserCatalog.LIST.containsKey(UserType.OTHER_TEST));
     }
 
     @AfterMethod

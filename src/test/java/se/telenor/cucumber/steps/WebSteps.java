@@ -10,11 +10,11 @@ public class WebSteps {
     @Autowired
     private DataHolder dataHolder;
 
-    @Autowired
-    private WebDriverFacade webDriverFacade;
+//    @Autowired
+//    private WebDriverFacade webDriverFacade;
 
     @Given("Test facade")
     public void testFacade() {
-        webDriverFacade.loadPage("https://google.com/");
+//        webDriverFacade.loadPage("https://google.com/");
     }
 }

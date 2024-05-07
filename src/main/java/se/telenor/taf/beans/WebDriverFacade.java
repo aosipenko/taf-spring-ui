@@ -15,9 +15,6 @@ import java.util.List;
 
 public class WebDriverFacade {
 
-    @Autowired
-    private SomeClassName someClassName;
-
     private final WebDriver driver;
     private final long timeout;
 

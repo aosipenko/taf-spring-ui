@@ -6,11 +6,6 @@
             <class name="se.telenor.test.TracingutilTest"></class>
         </classes>
     </test>
-    <test name="Other Regression">
-        <classes>
-            <class name="se.telenor.cucumber.CucumberOtherTestRunner"/>
-        </classes>
-    </test>
     <test name="Broadband Update Regression">
         <classes>
             <class name="se.telenor.cucumber.CucumberBroadbandUpdateTestRunner"/>

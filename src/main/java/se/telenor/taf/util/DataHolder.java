@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 public class DataHolder {
 
     private final static MultiKeyMap<MultiKey, Object> HOLDER = new MultiKeyMap<>();
-
     public void put(String alias, Object o) {
         HOLDER.put(new MultiKey(alias, o.getClass()), o);
     }
